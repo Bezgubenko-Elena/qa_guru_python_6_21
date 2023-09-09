@@ -13,7 +13,7 @@ def test_get_list_breeds():
     assert response.status_code == 200
 
 
-def test_get_list_breeds_scheema():
+def test_get_list_breeds_schema():
     with open(os.path.join(path_schema, "schema_breeds.json")) as file:
         schema = json.loads(file.read())
         response = helper.catfact_api('get', '/breeds')
